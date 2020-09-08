@@ -34,6 +34,7 @@ const useStyles = makeStyles({
     },
     currentDateStamp: {
         color: '#fff',
+        fontSize: 15,
         marginTop: 5,
         '@media (max-width:558px)': {
             fontSize: 10

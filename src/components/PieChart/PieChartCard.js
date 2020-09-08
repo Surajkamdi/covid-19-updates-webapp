@@ -82,8 +82,8 @@ export default function PieChartCard() {
                         nameKey="name"
                         isAnimationActive={true} 
                         data={covidData} 
-                        cx={230} 
-                        cy={120}
+                        cx={250} 
+                        cy={140}
                         outerRadius={100} 
                         innerRadius={60} 
                         fill="#8884d8" 

@@ -18,15 +18,15 @@ const useStyles = makeStyles({
 
     },
     title: {
-        fontSize: 14,
+        fontSize: 15,
         color: '#fff',
         '@media (max-width:414px)': {
-            fontSize: '0.4rem'
+            fontSize: 10
         }
     },
-    heading_4: {
+    heading_6: {
         '@media (max-width:414px)': {
-            fontSize: '4.2vw'
+            fontSize: 15
         }
     }
 
@@ -62,10 +62,10 @@ export default function ConfirmedCasesCard() {
             <Card className={classes.root} variant="outlined">
                 <CardContent>
                     <AccessibleIcon />
-                    <Typography variant="h5" className={classes.title} gutterBottom>
+                    <Typography className={classes.title} gutterBottom>
                         Confirmed 
                 </Typography>
-                    <Typography variant="h4" className={classes.heading_4}>
+                    <Typography variant="h6" className={classes.heading_6}>
                         {totalConfirmedCases || "..."}
                     </Typography>
                 </CardContent>

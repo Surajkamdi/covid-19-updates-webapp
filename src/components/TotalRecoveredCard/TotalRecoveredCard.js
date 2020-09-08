@@ -17,15 +17,15 @@ const useStyles = makeStyles({
         boxShadow: '0 3px 5px 2px rgba(96, 125, 139, .3)',
     },
     title: {
-        fontSize: 14,
+        fontSize: 15,
         color: '#fff',
         '@media (max-width:414px)': {
-            fontSize: '0.4rem'
+            fontSize: 10
         }
     },
-    heading_4: {
+    heading_6: {
         '@media (max-width:414px)': {
-            fontSize: '4.2vw'
+            fontSize: 15
         }
     }
 });
@@ -58,10 +58,10 @@ export default function TotalRecoveredCard() {
             <Card className={classes.root} variant="outlined">
                 <CardContent>
                     <AccessibilityNewIcon />
-                    <Typography variant="h5" className={classes.title} gutterBottom>
+                    <Typography className={classes.title} gutterBottom>
                         Recovered
                  </Typography>
-                    <Typography variant="h4" className={classes.heading_4}>
+                    <Typography variant="h6" className={classes.heading_6}>
                         {totalRecovered || "..."}
                     </Typography>
                 </CardContent>
