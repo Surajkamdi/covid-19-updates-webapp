@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { makeStyles, Container, Typography, Card, CardContent } from '@material-ui/core';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Label } from 'recharts';
 import currentDate from '../CurrentDate';
 
 const useStyles = makeStyles({
     root: {
         color: '#fff',
-        background: 'linear-gradient(45deg, #bcaaa4 30%, #d7ccc8 90%)',
+        background: 'linear-gradient(45deg, #757575 30%, #9e9e9e 90%)',
         border: '1px solid #01579b',
         boxShadow: '0 3px 5px 2px rgba(96, 125, 139, .3)',
         maxWidth: 600
@@ -116,6 +116,7 @@ function StackedBarGraph() {
                      </Typography>
                     {!covidData ? 'Loading...' : ''}
                     <BarChart
+                        fill= "#fff"
                         width={500}
                         height={300}
                         data={covidData}

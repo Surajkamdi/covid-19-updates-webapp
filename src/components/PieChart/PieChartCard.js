@@ -76,7 +76,7 @@ export default function PieChartCard() {
                         Global Report
                 </Typography>
                     {!covidData ? 'Loading...' : ''}
-                    <PieChart width={400} height={300}>
+                    <PieChart width={450} height={300}>
                         <Pie 
                         dataKey="value" 
                         nameKey="name"
@@ -85,7 +85,7 @@ export default function PieChartCard() {
                         cx={250} 
                         cy={140}
                         outerRadius={100} 
-                        innerRadius={60} 
+                        innerRadius={40} 
                         fill="#8884d8" 
                         legendType='circle'
                         label />
